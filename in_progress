@@ -62,3 +62,5 @@ dead_class = data[data.Survived == 0]['Pclass']
 plt.hist([survived_class, dead_class], bins=3, rwidth=.8, stacked=True, label=['Dead', 'Survived'])
 plt.legend()
 plt.show()
+
+
