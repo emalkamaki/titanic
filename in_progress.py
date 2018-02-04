@@ -38,6 +38,7 @@ data.set_index('PassengerId') # Use PassengerId as the index
 data.info()   # 891 rows, 12 columns, Age 714 and Cabin 204 data missing. 
 data['Age'].describe()
 
+# Fills the missing values with the median age for EDA
 data['Age'] = data.Age.fillna(data.Age.median())
 data.info()
 
